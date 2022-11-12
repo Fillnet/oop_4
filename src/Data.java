@@ -10,7 +10,6 @@ public class Data {
     }
     public static boolean checkCredentials(String login, String password,String confirmPassword) {
         try {
-//            System.out.println("Результат проверки правильности введенного пароля/логина: "+CredentialsValidator.validateCredentials(login,password,confirmPassword));
             return CredentialsValidator.validateCredentials(login,password,confirmPassword);
         }catch (WrongLoginException e){
             System.out.println("Ошибка проверки логина: " + e.getMessage());
